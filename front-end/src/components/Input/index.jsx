@@ -4,7 +4,7 @@ export function Input({ icon: Icon, ...rest }) {
     return (
         <Container >
             {Icon && <Icon size={20} />}
-            <input type="text" {...rest} />
+            <input autoComplete="none" type="text" {...rest} />
         </Container>
     )
 }3
