@@ -1,4 +1,5 @@
 require("express-async-errors")
+require("dotenv/config");
 
 const express = require("express")
 const routes = require('./routes')
@@ -32,6 +33,8 @@ app.use((error, request, response, next) => {
     })
 })
 
-app.listen(3333, () => {
-    console.log("HTTP Server is running")
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {
+    console.log(`HTTP Server is running on port ${PORT}`)
 })
