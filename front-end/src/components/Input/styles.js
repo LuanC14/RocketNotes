@@ -29,7 +29,7 @@ export const Container = styled.div`
     }
 
     input:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 30px ${({ theme }) => theme.COLORS.BACKGROUND_700} inset !important;
-        -webkit-text-fill-color: ${({ theme }) => theme.COLORS.GRAY_100} !important;
+        -webkit-box-shadow: 0 0 0 30px ${({ theme }) => theme.COLORS.BACKGROUND_900} inset !important;
+        -webkit-text-fill-color: ${({ theme }) => theme.COLORS.GRAY_300} !important;
 }
 `
